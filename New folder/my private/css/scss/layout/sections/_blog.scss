@@ -1,0 +1,58 @@
+/*blog*/
+.blog {
+	margin: 100px 0 0;
+	background: $c-white;
+
+	h2 {
+		color: $c-blue;
+		margin-bottom: 60px;
+	}
+	.post {
+		box-shadow: 0px 10px 20px 0px rgba($c-light, 0.5);
+		margin-bottom: 30px;
+
+		.photo {
+			position: relative;
+			img {
+				width: 100%;
+			}
+			.date {
+				position: absolute;
+				bottom: -20px;
+				left: 10px;
+				background: $c-red;
+				color: $c-white;
+				padding: 20px 30px;
+				border-radius: 5px;
+				font-family: 'Shadows Into Light', cursive;
+				font-weight: 600;
+				font-size: 16px
+			}
+		}
+		.info {
+			padding: 35px 20px;
+			h4 {
+				color: $c-light-blue;
+				margin-bottom: 15px;
+
+				a{
+					color: inherit;
+					font-size: 18px;
+				}
+			}
+			p {
+				color: $c-wr-2;
+			}
+
+			a {
+				color: $c-red;
+				transition: .3s;
+				font-size: 12px;
+				&:hover {
+					color: $c-blue;
+				}
+			}
+		}
+	}
+}
+/*blog*/

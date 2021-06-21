@@ -1,0 +1,149 @@
+/*blog-single*/
+.blog-single {
+	margin: 100px 0 0;
+	background: $c-white;
+	.post {
+		// box-shadow: 0px 10px 20px 0px rgba($c-light, 0.5);
+		margin-bottom: 30px;
+
+		.photo {
+			position: relative;
+			img {
+				width: 100%;
+			}
+			.date {
+				position: absolute;
+				bottom: -20px;
+				left: 10px;
+				background: $c-red;
+				color: $c-white;
+				padding: 20px 30px;
+				border-radius: 5px;
+				font-family: 'Shadows Into Light', cursive;
+				font-weight: 600;
+				font-size: 16px
+			}
+		}
+		.info {
+			padding: 35px 20px;
+			h4 {
+				color: $c-light-blue;
+				margin-bottom: 15px;
+
+				a{
+					color: inherit;
+					font-size: 18px;
+				}
+			}
+			p {
+				color: $c-wr-2;
+				&:not(:first-of-type) {
+					margin-top: 40px;
+					line-height:1.733;
+					letter-spacing:.7px;
+				}
+			}
+
+			a {
+				color: $c-red;
+				transition: .3s;
+				font-size: 12px;
+				&:hover {
+					color: $c-blue;
+				}
+			}
+		}
+		.quets {
+			border: 20px solid $c-light;
+			padding: 20px;
+			line-height: 1.733;
+			color: $c-wr-2;
+		}
+		.lorem {
+			p {
+				line-height: 1.733;
+				color: $c-wr-2;
+				margin-top: 40px
+			}
+		}
+		.customer {
+			padding:  30px 0;
+			div {
+				background: $c-offwh;
+				padding: 25px;
+				overflow: hidden;
+				img {
+					float: left;
+					margin: 10px 20px 20px 0
+				}
+				h5 {
+					color: $c-blue;
+					font-family: 'Shadows Into Light', cursive;
+					transition: .4s;
+					margin: 15px 0;
+					&:hover {
+						color: $c-red;
+					}
+					a {
+						color: inherit;
+					}
+				}
+				p {
+					color: $c-wr-1;
+					line-height: 1.733;
+				}
+			}
+		}
+		.comments {
+			h4 {
+				color: $c-blue;
+				font-family: 'Shadows Into Light', cursive;
+				padding: 20px 0;
+			}
+			.comment {
+				overflow: hidden;
+				margin: 30px 0 60px;
+				img {
+					float: left;
+					margin-right: 20px;
+					margin-bottom: 30px;
+				}
+				p {
+					line-height: 1.733;
+					color: $c-wr-2;
+				}
+
+				h5 {
+					font-family: 'Shadows Into Light', cursive;
+					float: left;
+					color: $c-wr-1;
+					transition: .4s;
+					margin: 5px 30px 0 0;
+					&:hover {
+						color: $c-red
+					}
+					a{
+						color: inherit
+					}
+				}
+				span {
+					float: left;
+					margin: 5px 0 0;
+					font-size: 12px;
+					color: $c-wr-2;
+				}
+				a{
+					float: right;
+					color: $c-black;
+					transition: .4s;
+					font-family: 'Shadows Into Light', cursive;
+					&:hover {
+						color: $c-red;
+					}
+				}
+			}
+		}
+	}
+}
+@import "aside";
+/*blog-single*/

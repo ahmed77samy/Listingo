@@ -1,0 +1,39 @@
+/*slider*/
+.slider {
+	height: 700px;
+	width: 100%;
+	position: relative;
+	background: url("../photo/banner/bradcam3.png")no-repeat center;
+	background-size: cover;
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $ovl-blue-light-top;
+
+		.area
+		{
+			margin-top: 200px;
+			background: transparent;
+			img {
+				width: 130px;
+				height: 130px;
+				border-radius: 50%;
+			}
+
+			h1 {
+				color: $c-white;
+				font-size: 70px;
+				// margin: 30px 0 60px
+			}
+
+			h5 {
+				color: $c-white;
+			}
+		}
+	}
+}
+/*slider*/

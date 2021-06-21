@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Listingo - Listings</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Sriracha&display=swap">
+		<link rel="stylesheet" href="../css/normaliz.min.css">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/fontello-icon.min.css">
+		<link rel="stylesheet" href="../css/nice-select.min.css">
+		<link rel="stylesheet" href="../css/listings.css">
+	</head>
+	<body>
+
+		<header><!--header-->
+			<nav><!--nav-->
+				<div class="container-fluid"><!--container-fluid-->
+					<div class="row"><!--row-->
+						<div class="col-md-2 col-xs-3 pull-left">
+							<div class="logo"><!--logo-->
+								<img src="../photo/logo/logo.png" alt="LOGO">
+							</div><!--logo-->
+						</div>
+						<div class="col-xs-2 hidden-md hidden-lg pull-right">
+							<div class="menu"><!--menu-->
+								<i class="demo-icon icon-menu pull-right">&#xf0c9;</i>
+							</div><!--menu-->
+						</div>
+						<div class="col-md-8 col-xs-12" style="padding: 0;">
+							<ul class="list-unstyled text-center ul-navbar active"><!--ul-->
+								<li class="text-capitalize"><a href="../index.html">home</a></li>
+								<li class="text-capitalize"><a href="listings.html">Listings</a></li>
+								<li class="text-capitalize"><a href="description.html">Description</a></li>
+								<li class="text-capitalize"><a href="about.html">about</a></li>
+								<li class="text-capitalize drop" data-drop=".one"><a href="#">blog<i class="demo-icon icon-right-open-big">&#xe80c;</i></a>
+									<ul class="drop-down hv one hidden-sm hidden-xs"><!--drop-down-->
+										<li class="text-capitalize"><a href="blog.html">blog</a></li>
+										<li class="text-capitalize"><a href="blog-single.html">blog"single</a></li>
+									</ul><!--drop-down-->
+									<ul class="drop-down ck one hidden-md hidden-lg"><!--drop-down-->
+										<li class="text-capitalize"><a href="blog.html">blog</a></li>
+										<li class="text-capitalize"><a href="blog-single.html">blog"single</a></li>
+									</ul><!--drop-down-->
+								</li>
+								<li class="text-capitalize"><a href="contact.html">contact</a></li>
+							</ul><!--ul-->
+						</div>
+						<div class="col-md-2 hidden-sm hidden-xs pull-right">
+							<div class="sign-in"><!--sign-in-->
+								<button class="btn btn-1 text-capitalize pull-right"><a href="#">sign in</a></button>
+							</div><!--sign-in-->
+						</div>
+					</div><!--row-->
+				</div><!--container-fluid-->
+			</nav><!--nav-->
+		</header><!--header-->
+
+		<div class="slider"><!--slider-->
+			<div class="overlay"><!--overlay-->
+				<div class="container"><!--container-->
+					<div class="area"><!--area-->
+						<h1 class="text-center text-capitalize custom-h">Our Listings</h1>
+						<form action="#"><!--form-->
+							<input class="form-control" type="text" placeholder="what are you finding">
+							<input class="form-control" type="text" placeholder="location">
+							<button class="btn btn-1 pull-right">search</button>
+						</form><!--form-->
+					</div><!--area-->
+				</div><!--container-->
+			</div><!--overlay-->
+		</div><!--slider-->
+
+		<div class="main"><!--main-->
+			<div class="container"><!--container-->
+				<div class="row"><!--row-->
+					<div class="col-md-4 col-xs-12"><!--first-->
+						<aside><!--aside-->
+							<div class="filter"><!--filter-->
+								<h5 class="text-capitalize">Advanced Filter</h5>
+								<form action="#"><!--form-->
+									<div class="area one"><!--area one-->
+										<input class="form-control" type="search" placeholder="What Are You Finding?">
+										<button><i class="demo-icon icon-search">&#xe823;</i></button>
+									</div><!--area one-->
+									<div class="area two"><!--area two-->
+										<select class="form-control" id="sel-nice1">
+											<option data-display="Choose">Cat 1</option>
+											<option>Cat 2</option>
+											<option>Cat 3</option>
+											<option>Cat 4</option>
+										</select>
+									</div><!--area two-->
+									<div class="area three"><!--area three-->
+										<select class="form-control" id="sel-nice2">
+											<option data-display="Location">USA</option>
+											<option>Africa</option>
+											<option>Canada</option>
+										</select>
+									</div><!--area three-->
+									<div class="area four"><!--area four-->
+										<input type="checkbox" id="check1">
+										<label for="check1">Open Now</label>
+									</div><!--area four-->
+									<div class="area five"><!--area five-->
+										<input type="checkbox" id="check2">
+										<label for="check2">Ratings</label>
+									</div><!--area five-->
+									<div class="area six"><!--area six-->
+										<select class="form-control" id="sel-nice3" style="display: block;">
+											<option data-display="Area (Km)">1 Km</option>
+											<option>2 Km</option>
+											<option>3 Km</option>
+										</select>
+									</div><!--area six-->
+									<div class="area seven"><!--area seven-->
+										<input type="reset" value="Reset" class="btn btn-1">
+									</div><!--area seven-->
+								</form><!--form-->
+							</div><!--filter-->
+						</aside><!--aside-->
+					</div><!--first-->
+					<div class="col-md-8 col-xs-12"><!--second-->
+						<div class="explore"><!--explore-->
+							<h5 class="text-uppercase">5432 Listings are available</h5>
+							<div class="row"><!--row-->
+								<div class="col-sm-6 col-xs-12"><!--first-->
+									<div class="exe"><!--exe-->
+										<div class="photo"><!--photo-->
+											<img src="../photo/explorer/1.png" alt="EXPLORER">
+										</div><!--photo-->
+										<div class="text"><!--text-->
+											<img src="../photo/icon/Screenshot_1.png" alt="icon">
+											<h5 class="text-capitalize"><a href="#">Helthy Food</a></h5>
+											<p>700/D, Kings road, Green lane, London</p>
+											<i class="demo-icon icon-phone-1">&#xe824;</i> <span>+10 278 367 9823</span><br>
+											<i class="demo-icon icon-mail">&#xe825;</i> <span>contact@midnight.com</span>
+										</div><!--text-->
+									</div><!--exe-->
+								</div><!--first-->
+								<div class="col-sm-6 col-xs-12"><!--second-->
+									<div class="exe"><!--exe-->
+										<div class="photo"><!--photo-->
+											<img src="../photo/explorer/2.png" alt="EXPLORER">
+										</div><!--photo-->
+										<div class="text"><!--text-->
+											<img src="../photo/icon/Screenshot_2.png" alt="icon">
+											<h5 class="text-capitalize"><a href="#">Freshly Food</a></h5>
+											<p>700/D, Kings road, Green lane, London</p>
+											<i class="demo-icon icon-phone-1">&#xe824;</i> <span>+10 278 367 9823</span><br>
+											<i class="demo-icon icon-mail">&#xe825;</i> <span>contact@midnight.com</span>
+										</div><!--text-->
+									</div><!--exe-->
+								</div><!--second-->
+								<div class="col-sm-6 col-xs-12"><!--third-->
+									<div class="exe"><!--exe-->
+										<div class="photo"><!--photo-->
+											<img src="../photo/explorer/3.png" alt="EXPLORER">
+										</div><!--photo-->
+										<div class="text"><!--text-->
+											<img src="../photo/icon/Screenshot_3.png" alt="icon">
+											<h5 class="text-capitalize"><a href="#">Midnight</a></h5>
+											<p>700/D, Kings road, Green lane, London</p>
+											<i class="demo-icon icon-phone-1">&#xe824;</i> <span>+10 278 367 9823</span><br>
+											<i class="demo-icon icon-mail">&#xe825;</i> <span>contact@midnight.com</span>
+										</div><!--text-->
+									</div><!--exe-->
+								</div><!--third-->
+								<div class="col-sm-6 col-xs-12"><!--fourty-->
+									<div class="exe"><!--exe-->
+										<div class="photo"><!--photo-->
+											<img src="../photo/explorer/4.png" alt="EXPLORER">
+										</div><!--photo-->
+										<div class="text"><!--text-->
+											<img src="../photo/icon/Screenshot_4.png" alt="icon">
+											<h5 class="text-capitalize"><a href="#">Sea Fish</a></h5>
+											<p>700/D, Kings road, Green lane, London</p>
+											<i class="demo-icon icon-phone-1">&#xe824;</i> <span>+10 278 367 9823</span><br>
+											<i class="demo-icon icon-mail">&#xe825;</i> <span>contact@midnight.com</span>
+										</div><!--text-->
+									</div><!--exe-->
+								</div><!--fourty-->
+								<div class="col-sm-6 col-xs-12"><!--fivty-->
+									<div class="exe"><!--exe-->
+										<div class="photo"><!--photo-->
+											<img src="../photo/explorer/5.png" alt="EXPLORER">
+										</div><!--photo-->
+										<div class="text"><!--text-->
+											<img src="../photo/icon/Screenshot_5.png" alt="icon">
+											<h5 class="text-capitalize"><a href="#">Integrated food</a></h5>
+											<p>700/D, Kings road, Green lane, London</p>
+											<i class="demo-icon icon-phone-1">&#xe824;</i> <span>+10 278 367 9823</span><br>
+											<i class="demo-icon icon-mail">&#xe825;</i> <span>contact@midnight.com</span>
+										</div><!--text-->
+									</div><!--exe-->
+								</div><!--fivty-->
+								<div class="col-sm-6 col-xs-12"><!--sixty-->
+									<div class="exe"><!--exe-->
+										<div class="photo"><!--photo-->
+											<img src="../photo/explorer/6.png" alt="EXPLORER">
+										</div><!--photo-->
+										<div class="text"><!--text-->
+											<img src="../photo/icon/Screenshot_6.png" alt="icon">
+											<h5 class="text-capitalize"><a href="#">Pizza</a></h5>
+											<p>700/D, Kings road, Green lane, London</p>
+											<i class="demo-icon icon-phone-1">&#xe824;</i> <span>+10 278 367 9823</span><br>
+											<i class="demo-icon icon-mail">&#xe825;</i> <span>contact@midnight.com</span>
+										</div><!--text-->
+									</div><!--exe-->
+								</div><!--sixty-->
+							</div><!--row-->
+							<hr>
+							<div class="control text-center">
+								<span class="sp-control"><a href="#"><i class="demo-icon icon-left-open-big">&#xe80d;</i></a></span>
+								<span class="sp-control"><a href="#">01</a></span>
+								<span class="sp-control"><a href="#">02</a></span>
+								<span class="sp-control"><a href="#">03</a></span>
+								<span class="sp-control"><a href="#"><i class="demo-icon icon-right-open-big">&#xe80c;</i></a></span>
+							</div>
+						</div><!--explore-->				
+					</div><!--second-->
+				</div><!--row-->
+			</div><!--container-->
+		</div><!--main-->
+
+		<footer><!--footer-->
+			<div class="container"><!--container-->
+				<div class="row"><!--row-->
+					<div class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom: 30px"><!--first-->
+						<div class="logo"><!--logo-->
+							<img src="../photo/logo/logo.png" alt="logo">
+						</div><!--logo-->
+						<p class="text-capitalize">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum dolores.</p>
+						<div class="social fc"><a href="#"><i class="demo-icon icon-facebook">&#xf09a;</i></a></div><!--facebook-->
+						<div class="social go"><a href="#"><i class="demo-icon icon-gplus">&#xf0d5;</i></a></div><!--google-->
+						<div class="social tw"><a href="#"><i class="demo-icon icon-twitter">&#xf309;</i></a></div><!--twitter-->
+						<div class="social ig"><a href="#"><i class="demo-icon icon-instagram">&#xf16d;</i></a></div><!--instgram-->
+					</div><!--first-->
+					<div class="col-md-2 col-sm-6 col-xs-12" style="margin-bottom: 30px"><!--second-->
+						<div class="services"><!--services-->
+							<h4 class="text-capitalize">services</h4>
+							<a href="#" class="text-capitalize">SEO/SEM</a><br>
+							<a href="#" class="text-capitalize">Web design</a><br>
+							<a href="#" class="text-capitalize">Ecommerce</a><br>
+							<a href="#" class="text-capitalize">Digital marketing</a>
+						</div><!--services-->
+					</div><!--second-->
+					<div class="col-md-2 col-sm-6 col-xs-12" style="margin-bottom: 30px"><!--third-->
+						<div class="links"><!--links-->
+							<h4 class="text-capitalize">Useful Links</h4>
+							<a href="#" class="text-capitalize">About</a><br>
+							<a href="#" class="text-capitalize">Blog</a><br>
+							<a href="#" class="text-capitalize">Contact</a><br>
+							<a href="#" class="text-capitalize">Support</a>
+						</div><!--links-->
+					</div><!--third-->
+					<div class="col-md-5 col-sm-6 col-xs-12" style="margin-bottom: 30px"><!--fourty-->
+						<form action="#"><!--form-->
+							<input type="email" placeholder="Enter Your E-mail" class="form-control">
+							<button class="btn btn-1">subscribe</button>
+						</form><!--form-->
+						<p class="text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ullam harum perspiciatis eveniet nesciunt </p>
+					</div><!--fourty-->
+				</div><!--row-->
+			</div><!--container-->
+
+			<div class="copy-right text-center">
+				<p>Copyright ©2020 All rights reserved | This template is made with<i class="demo-icon icon-heart-empty">&#xe800;</i>by <span class="text-capitalize">ahmed samy</span> </p>
+			</div>
+		</footer><!--footer-->
+		<script src="../js/jquery-3.4.1.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/jquery.nice-select.min.js"></script>
+		<script src="../js/global.js"></script>
+		<script src="../js/listings.js"></script>
+	</body>
+</html>

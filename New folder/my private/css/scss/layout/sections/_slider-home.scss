@@ -1,0 +1,114 @@
+/*slider*/
+.slider {
+	height: 900px;
+	width: 100%;
+	position: relative;
+	background: url("../photo/banner/banner.png") no-repeat center;
+	background-size: cover;
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $ovl-blue;
+
+		.area
+		{
+			margin-top: 250px;
+			background: transparent;
+
+			@include xs {
+				margin-top: 200px;
+			}
+
+			h2 {
+				color: $c-red;				
+			}
+
+			h1 {
+				color: $c-white;
+				font-family: 'Shadows Into Light', cursive;
+				font-size: 70px;
+				margin: 30px 0 60px
+			}
+
+			form {
+				background: $c-white;
+				overflow: hidden;
+				padding: 10px;
+				border-radius: 5px;
+				width: 84%;
+				margin: 0 auto 30px;
+				
+				input {
+					width: 42%;
+					float: left;
+					padding: 25px 15px;
+					border: none;
+					outline: none;
+					box-shadow: none;
+					border-radius: 0;
+					color: $c-blue;
+					font-size: 20px;
+					text-transform: capitalize;
+					
+					&:first-of-type {
+						border-right: 1px solid $c-light;
+
+						@include xs {
+							border-right: none;
+						}
+						@include sm {
+							border-right: none;
+						}
+					}
+
+					@include xs {
+						width: 100%;
+						float: none !important;
+						displaY: block;
+						margin-bottom: 10px;
+						
+					}
+					@include sm {
+						width: 100%;
+						float: none !important;
+						displaY: block;
+						margin-bottom: 10px;
+
+					}
+				}
+
+				button {
+					color: $c-white;
+
+					@include xs {
+						float: none !important;
+						display: block;
+						margin:auto;
+						margin-bottom: 20px;
+					}
+					@include sm {
+						float: none !important;
+						display: block;
+						margin:auto;
+						margin-bottom: 20px;
+					}
+				}
+			}
+
+			span {
+				display: inline-block;
+				cursor: pointer;
+				margin: 0 2px 20px;
+
+				&:hover {
+					background: $c-red;
+				}
+			}
+		}
+	}
+}
+/*slider*/

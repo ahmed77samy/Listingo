@@ -1,0 +1,30 @@
+/*counter*/
+.counter {
+	margin: 100px 0 0;
+	background: $c-white;
+
+	@include xs {
+		margin: 0
+	}
+	@include sm {
+		margin: 0
+	}
+	.count {
+		@include xs {
+			margin-bottom: 50px;
+		}
+		@include sm {
+			margin-bottom: 50px;
+		}
+		h2 {
+			color: $c-red;
+			font-size: 50px;
+			font-weight: 100;
+			margin-bottom: 40px;
+		}
+		h5 {
+			color: $c-blue
+		}
+	}
+}
+/*counter*/

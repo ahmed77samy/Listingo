@@ -1,0 +1,115 @@
+/*start sidebar*/
+.sidebar
+{
+	.search{
+		background: $c-blue;
+		padding: 20px;
+		margin-bottom: 40px;
+		.form-control
+		{
+			background: transparent;
+			border-radius: 0;
+			border: none;
+			outline: none;
+			color: $c-white;
+			box-shadow: none;
+			text-transform: capitalize;
+			cursor: unset;
+			&::placeholder
+			{
+				color: $c-wr-2;
+				font-size: 13px;
+			}
+			&:focus
+			{
+				box-shadow: none;
+			}
+		}
+	}
+	section {
+		border: 2px solid $c-offwh-2;
+		background: $c-offwh-2;
+		margin: 0 0 40px;
+		.header {
+			background: $c-white;
+			color: $c-blue;
+			padding: 10px 40px;
+			h4 {
+				font-weight: 700;
+				font-family: 'Shadows Into Light', cursive;
+			}
+		}
+		.body {
+			padding: 10px 40px;
+			.post
+			{
+				overflow: hidden;
+				padding: 25px 0;
+				border-bottom: 1px solid $c-light;
+				&.three
+				{
+					border: none;
+				}
+	
+				img
+				{
+					float: left;
+					margin-right: 12px;
+				}
+				h5
+				{
+					color: $c-blue;
+					display: inline-block;
+					line-height: 25px;
+					margin-top: 10px;
+				}
+				p {
+					color: $c-wr-2;
+					font-size: 12px;
+				}
+			}
+			h5 {
+				&:hover {
+					color: $c-red;
+				}
+				a {
+					color: inherit;
+					transition: .3s;
+				}
+			}
+		}
+		&.section-two {
+			.body {
+				h5 {
+					margin: 35px 0;
+					color: $c-blue;
+					&:hover {
+						color: $c-red;
+					}
+				}
+			}
+		}
+		&.section-three {
+			.body {
+				padding: 40px;
+				h5 {
+					color: $c-blue;
+					display: inline;
+					line-height: 35px;
+					&:hover {
+						color: $c-red;
+					}
+				}
+			}
+		}
+		&.section-four {
+			.body {
+				padding: 40px;
+				img {
+					margin: 0 7px 10px 0
+				}
+			}
+		}
+	}
+}
+/*end sidebar*/

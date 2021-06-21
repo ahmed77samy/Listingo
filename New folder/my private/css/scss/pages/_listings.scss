@@ -1,0 +1,71 @@
+@import "../helpers/variables";
+@import "../helpers/mixin";
+@import "../global/global";
+@import "../helpers/reset";
+@import "../global/component";
+@import "../layout/header";
+@import "../layout/sections/slider-listings";
+@import "../layout/sections/explore";
+
+.main {
+	h5 {
+		color: $c-blue;
+		margin-bottom: 20px;
+	}
+	aside {
+		margin: 100px 0 0;
+		.filter {
+			form {
+				padding: 20px;
+				border: 1px solid $c-light;
+				border-radius: 10px;
+				font-size: 12px;
+				.area {
+					&.one {
+						position: relative;
+						.form-control {
+							padding: 20px 10px;
+						}
+						button{
+							position: absolute;
+							top: 12px;
+							right: 10px;
+							outline: none;
+							border: none;
+							background: transparent;
+							color: $c-wr-2
+						}
+					}
+					margin: 20px 0;	
+					position: relative;
+					clear: both;
+					width: 100%;
+					.form-control {
+						border-color: $c-light;
+						outline-color: $c-light;
+					}
+					.nice-select
+					{
+						padding: 2px 15px;
+					}
+					.nice-select,.list
+					{
+						float: none;
+						width: 100%;
+						font-size: 12px;
+					}
+
+					.btn-1{
+						color: $c-white;
+						&:hover,&:focus{
+							color: $c-white;
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
+
+@import "../layout/footer";

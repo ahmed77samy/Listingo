@@ -1,0 +1,76 @@
+/*testimonials*/
+.testimonials {
+	margin: 100px 0 0;
+	background: $c-white;
+	h4 {
+		color: $c-red
+	}
+	h2 {
+		color: $c-blue;
+		margin-bottom: 60px;
+	}
+	.side {
+		border: 1px solid $c-dark;
+		border-radius: 50%;
+		padding: 15px;
+		cursor: pointer;
+		transition: .4s;
+		transform: translateY(120px);
+		&:hover {
+			background: $c-blue;
+			color: $c-white
+		}
+
+		@include xs {
+			transform: none;
+			margin-bottom: 10px;
+		}
+		@include sm {
+			transform: none;
+			margin-bottom: 10px;
+		}
+	}
+
+	.content {
+		position: relative;
+		overflow: hidden;
+		min-height: 320px;
+
+		@include xs {
+			display: block;
+			width: 100%;
+		}
+		@include sm {
+			display: block;
+			width: 100%;
+		}
+
+		.customer {
+			display: none;
+
+			h2 {
+				margin: 0;
+				font-size: 100px;
+				color: $c-red;
+				opacity: .8;
+			}
+
+			p{
+				font-size: 20px;
+				color: $c-dark;
+				margin-bottom: 30px;
+			}
+			h4 {
+				font-size: 14px;
+				color: $c-light-blue;
+				margin: 10px 0 5px;
+			}
+			span {
+				color: $c-wr-1;
+				font-size: 12px;
+			}
+
+		}
+	}
+}
+/*testimonials*/

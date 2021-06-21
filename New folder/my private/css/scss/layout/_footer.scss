@@ -1,0 +1,141 @@
+/*footer*/
+footer {
+	margin: 100px 0 0;
+	padding: 100px 0 0;
+	background: $c-blue;
+
+	.logo {
+		margin-bottom: 40px;
+		img {
+			cursor: pointer;
+		}
+	}
+	p{
+		color: $c-wr-2;
+		margin-bottom: 40px;
+	}
+
+	.social {
+		display: inline-block;
+		padding: 8px 0;
+		width: 35px;
+		height: 35px;
+		margin-right: 10px;
+		border-radius: 50%;
+		text-align: center;
+		transition: .4s;
+		cursor: pointer;
+		background: $c-red;
+
+		&.fc {
+			&:hover {
+				background: #3B5797;
+			}
+		}
+		&.go {
+			&:hover {
+				background: #DB4337;
+			}
+		}
+		&.tw {
+			&:hover {
+				background: #00ACED;
+			}
+		}
+		&.ig {
+			&:hover {
+				background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+			}
+		}
+
+		.demo-icon {
+			color: $c-white;
+			font-size: 18px;
+			line-height: 20px !important;
+		}
+	}
+
+	.services {
+		h4 {
+			color: $c-white;
+			margin-bottom: 40px;
+		}
+	
+		a{
+			color: $c-wr-2;
+			transition: .4s;
+			line-height: 35px;
+			font-size: 12px;
+			&:hover {
+				color: $c-white
+			}
+		}
+	}
+	.links {
+		h4 {
+			color: $c-white;
+			margin-bottom: 40px;
+		}
+	
+		a{
+			color: $c-wr-2;
+			transition: .4s;
+			line-height: 35px;
+			font-size: 12px;
+			&:hover {
+				color: $c-white
+			}
+		}
+	}
+
+	form {
+		border: 1px solid $c-wr-2;
+		border-radius: 5px;
+		overflow: hidden;
+		padding: 10px;
+		margin-bottom: 50px;
+
+		input.form-control {
+			background: transparent;
+			border: none;
+			outline: none;
+			font-size: 16px;
+			box-shadow: none !important;
+			color: $c-white;
+			float: left;
+			padding: 26px 10px;
+			width: calc(100% - 140px);
+		}
+		button.btn {
+			float: right;
+			color: $c-white;
+			&:hover {
+				color: $c-white
+			}
+			&:focus {
+				color: $c-white
+			}
+		}
+	}
+
+	.copy-right{
+		margin-top: 80px;
+		padding: 30px 0;
+
+		@include xs {
+			margin-top: 10px;
+		}
+		@include sm {
+			margin-top: 20px;
+		}
+		p{
+			margin:0;
+			padding: 0;
+			span {
+				color: $c-red;
+				cursor: pointer;
+			}
+		}
+	}
+}
+/*footer*/

@@ -1,0 +1,82 @@
+/*explore*/
+.explore {
+	background: $c-white;
+	margin: 100px 0 0;
+	
+	h2 {
+		color: $c-blue;
+	}
+	p {
+		color: $c-light-blue;
+		margin-bottom: 60px;
+	}
+	.exe {
+		border-radius: 10px;
+		margin-bottom: 30px;
+		overflow: hidden;
+		border: 1px solid $c-light;
+
+		.photo {
+			overflow: hidden;
+			img {
+				width: 100%;
+				transition: .3s;
+				transform: scale(1.1);
+			}
+		}
+
+		&:hover {
+			.photo {
+				img {
+					transform: scale(1);
+				}
+			}
+		}
+
+		.text {
+			padding: 20px;
+			img {
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				float: left;
+				margin: 0 10px 50px 0;
+			}
+
+			h5 {
+				color: $c-blue;
+				margin-top: 0;
+				transition: .3s;
+				a {
+					color: inherit
+				}
+			}
+
+			p {
+				color: $c-wr-2;
+				margin: 8px 0;
+				font-size: 12px;
+			}
+
+			.demo-icon {
+				color: $c-red;
+				opacity: .8;
+			}
+
+			span {
+				color: $c-wr-2;
+				font-size: 12px;
+				line-height: 25px;
+			}
+		}
+
+		&:hover {
+			.text {
+				h5 {
+					color: $c-red;
+				}
+			}
+		}
+	}
+}
+/*explore*/

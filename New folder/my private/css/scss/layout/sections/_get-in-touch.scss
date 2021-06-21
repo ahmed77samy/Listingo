@@ -1,0 +1,67 @@
+/*get-in-touch*/
+.get-in-touch {
+	margin: 100px 0 0;
+	h2 {
+		font-size: 30px;
+		color: $c-blue;
+		margin-bottom: 30px;
+	}
+	form {
+		@include xs {
+			margin-bottom: 70px;
+		}
+		@include sm {
+			margin-bottom: 70px;
+		}
+		.form-control {
+			border-color: $c-light;
+			margin-bottom: 20px;
+			font-weight: 100;
+			font-size: 16px;
+			color: $c-blue;
+			text-transform: capitalize;
+			padding: 20px 15px;
+			&::placeholder {
+				font-size: 14px;
+			}
+		}
+		textarea {
+			height: 150px;
+			resize: none;
+			
+		}
+		button.btn-1 {
+			background: transparent;
+			border: 1px solid $c-light;
+			color: $c-blue;
+			border-radius: 0;
+		}
+	}
+
+	aside {
+		div {
+			border-radius: 4px;
+			border: 2px solid $c-light;
+			padding: 20px 10px;
+			overflow: hidden;
+			margin-bottom: 30px;
+			span {
+				float: left;
+				width: 40px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				color: $c-blue;
+			}
+			h6 {
+				margin-top: 0;
+				color: $c-blue;
+			}
+			h5 {
+				margin-bottom: 0;
+				color: $c-blue;
+			}
+		}
+	}
+
+}
+/*get-in-touch*/

@@ -1,0 +1,33 @@
+/*visitors*/
+.visitors {
+	margin: 100px 0 0;
+	h2 {
+		color: $c-blue;
+		margin-bottom: 60px;
+	}
+
+	table {
+		width: 100%;
+		background: $c-offwh;
+
+		thead {
+			color: $c-light-blue;
+			border-bottom: 1px solid $c-light;
+
+			th {
+				padding: 20px;
+			}
+		}
+
+		tr {
+			border-bottom: 1px solid $c-light;
+			td {
+				padding: 20px;
+			}
+			.progress {
+				height: 10px
+			}
+		}
+	}
+}
+/*visitors*/

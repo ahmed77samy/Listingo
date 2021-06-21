@@ -1,0 +1,254 @@
+/*start header*/
+header {
+
+	nav {
+		background: transparent;
+		z-index: 9999;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		@include xs {
+			background: $c-blue
+		}
+
+		@include sm {
+			background: $c-blue
+		}
+
+		&.fixed {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 0 15px;
+			background: $c-blue;
+		}
+
+		.logo {
+			line-height: 52px;
+			padding: 15px 0;
+			
+			img {
+				cursor: pointer;
+			}
+		}
+
+		.menu {
+			cursor: pointer;
+			line-height: 520px;
+			font-size: 26px;
+			padding: 28px 0;
+			overflow: hidden;
+
+			.demo-icon {
+				color: $c-white;
+				transition: .3s;
+
+				&:hover {
+					color: $c-red;
+				}
+			}
+		}
+
+		.ul-navbar {
+			padding: 0;
+			margin: 0;
+
+			@include xs {
+				display: none;
+				background: $c-blue;
+				padding-bottom: 20px;
+			}
+
+			@include sm {
+				display: none;
+				background: $c-blue;
+				padding-bottom: 20px;
+			}
+
+			@include lg {
+				display: block !important;
+			}
+
+			li {
+				display: inline-block;
+				margin: 0 20px;
+				padding: 31px 0;
+
+				@include xs {
+					display: block;
+					margin: 0 ;
+					padding: 15px 0;
+				}
+				@include sm {
+					display: block;
+					margin: 0 ;
+					padding: 15px 0;
+				}
+				@include md {
+					visibility: visible !important;
+					pointer-events: all !important;
+				}
+				@include lg {
+					visibility: visible !important;
+					pointer-events: all !important;
+				}
+
+				a {
+					position: relative;
+					color: $c-white;
+					transition: .4s;
+					
+					&::before{
+						content: "";
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						width: 0;
+						height: 1px;
+						background: $c-red;
+						transition: .4s;
+					}
+
+					&:hover {
+						color: $c-red;
+
+						&::before{
+							width: 100%;
+						}
+					}
+				}
+
+				&.drop {
+					position: relative;
+					
+					.demo-icon {
+						transform: rotate(90deg);
+						font-size: 12px;
+					}
+
+					.drop-down {
+						margin: 0;
+						padding: 0;
+						position: absolute;
+						top: calc(100% + 2px);
+						left: 50%;
+						transform: translateX(-50%);
+						background: $c-white;
+						display: none;
+
+						@include xs {
+							position: static;
+							transform: none;
+							width: 100%;
+							background: transparent;
+							overflow: hidden;
+						}
+						@include sm {
+							position: static;
+							transform: none;
+							width: 100%;
+							background: transparent;
+							overflow: hidden;
+						}
+
+						&::before {
+							content: "";
+							position: absolute;
+							top: 0;
+							left: 50%;
+							transform: translate(-50%, -2px) rotate(45deg);
+							width: 15px;
+							height: 15px;
+							background: $c-white;
+
+							@include xs {
+								display: none;
+							}
+							@include sm {
+								display: none;
+							}
+						}
+
+						li {
+							margin: 0 40px;
+							text-align: center;
+							padding: 35px 0;
+							
+							@include xs {
+								margin: 0 ;
+								padding: 15px 0;
+							}
+							@include sm {
+								margin: 0 ;
+								padding: 15px 0;
+							}
+
+							&:first-of-type{
+								padding: 35px 0 0;
+
+								@include xs {
+									padding: 25px 0 15px;
+								}
+								@include sm {
+									padding: 25px 0 15px;
+								}
+							}
+
+							a {
+								color: $c-blue;
+
+								@include xs {
+									color: $c-white;
+								}
+								@include sm {
+									color: $c-white;
+								}
+
+								&::before {
+									background: $c-blue;
+
+									@include xs {
+										background: $c-red;
+									}
+									@include sm {
+										background: $c-red;
+									}
+								}
+								&:hover {
+									color: $c-blue;
+
+									@include xs {
+										color: $c-red;
+									}
+									@include sm {
+										color: $c-red;
+									}
+								}
+							}
+							
+						}
+					}
+				}
+			}
+		}
+
+		.sign-in {
+			overflow: hidden;
+			padding: 15px 0;
+
+			.btn-1 {
+				color: $c-white;
+
+				a {
+					color: inherit;
+					font-weight: 600;
+				}
+			}
+		}
+
+	}
+}
+/*end header*/
